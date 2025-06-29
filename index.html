@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--   <<link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> --> 
     <title>Curso Html</title>
     <meta name="description" content="Curso de HTML para iniciantes">
     <meta name="keywords" content="HTML, curso, iniciantes">
@@ -14,7 +14,7 @@
 
 <body>
 
-    <h1>Curso de Html</h1>
+    <h1 id="inicio">Curso de Html</h1>
     <hr>
     <h2>Indice</h2>
 
@@ -22,16 +22,17 @@
 
         <nav>
             <ul>
-                <li>Curso de HTML</li>
-                <li>Estrutura básica HTML</li>
-                <li>Tags de texto</li>
-                <li>Links e Imagens</li>
-                <li>Tabelas</li>
-                <li>Divisões e agrupamento</li>
-                <li>Formulários</li>
-                <li>Estilo e scripts</li>
-                <li>Semânticas Html</li>
-                <li>Referencias</li>
+                <li> <a href="#curso">Curso de HTML</a></li>
+                <li><a href="#estrutura">Estrutura básica HTML</a></li>
+                <li> <a href="#tagtexto">Tags de texto</a></li>
+                <li> <a href="#links">Links e Imagens</a></li>
+                <li> <a href="#tabelas">Tabelas</a></li>
+                <li> <a href="#divisoes">Divisões e agrupamento</a></li>
+                <li> <a href="#listas">Listas</a></li>
+                <li> <a href="#formularios">Formulários</a></li>
+                <li> <a href="#estilo">Estilo e scripts</a></li>
+                <li> <a href="#semantica">Semânticas Html</a></li>
+                <li> <a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
 
@@ -39,15 +40,17 @@
 
     <main>
 
-        <section>
+        <section id="curso">
             <h2>Curso de Html</h2>
+            <img src="\img\Curso.png" alt="" width="400" height="300">
             <p>Essa pagina tem como objetivo explicar as principais
                 funções do <abbr title="HyperText Markup Language">HTML</abbr>
                 com exemplos comentados. </p>
         </section>
 
-        <section>
+        <section id="estrutura">
             <h2>Estrutura básica do HTML</h2>
+            <img src="\img\Estrutura.png" alt="" width="400" height="300">
             <p>A estrutura do HTML é dividida em algumas tags principais.
                 A tag
 
@@ -64,11 +67,13 @@
 
         </section>
 
-        <section>
-            
-            <h2>Tags de texto</h2>
-            <p>As tags de texto em HTML são usadas para estruturar, formatar e destacar conteúdos escritos em uma página da web. Elas definem títulos, parágrafos, negrito, itálico, citações, código, entre outros.</p>
+        <section id="tagtexto">
 
+            <h2>Tags de texto</h2>
+            <img src="\img\texto.png" alt="" width="400" height="300">
+            <p>As tags de texto em HTML são usadas para estruturar, formatar e destacar conteúdos escritos em uma página
+                da web. Elas definem títulos, parágrafos, negrito, itálico, citações, código, entre outros.</p>
+            <h3>Exemplos</h3>
             <table border="1">
                 <thead>
                     <tr>
@@ -122,36 +127,108 @@
 
         </section>
 
-        <h2>Links e imagens</h2>
-        <p>Tag de link referencia outra pagina e a tag que referencia uma imagem.</p>
 
-        <h2>Listas</h2>
-        <p>Essa tag tem a função de criar listas ordenadas e não ordenadas.</p>
+        <section id="links">
+            
+            <h2>Links e imagens</h2>
+            <img src="\img\links.png" alt="" width="400" height="300">
+            <p>As tags de links e imagens são fundamentais para a navegação e a exibição visual de uma página web. A tag
+                <code>&lt;a&gt;</code> é usada para criar
+                hiperlinks, permitindo que o usuário navegue entre páginas ou seções, com o atributo href definindo o
+                destino. Já a tag <code>&lt;img&gt;</code> é
+                usada para inserir imagens e exige os atributos src (caminho da imagem) e alt (texto alternativo,
+                importante para acessibilidade).
+                Ambas contribuem para a interatividade e apresentação do conteúdo.
+            </p>
+        </section>
 
-        <h2>Tabelas</h2>
-        <p>Essa tag tem a função de criar tabelas com linhas e colunas.</p>
+        <section id="listas">
+            <h2>Listas</h2>
+            <img src="\img\Listas.png" alt="" width="400" height="300">
+            <p>O HTML oferece diferentes tipos de listas para organizar conteúdos de forma estruturada. A tag
+                <code>&lt;ul&gt;</code> representa uma lista não ordenada, com marcadores (bolinhas),
+                enquanto <code>&lt;ol&gt;</code> representa uma lista ordenada, com números. Dentro dessas listas, cada
+                item é definido pela tag <code>&lt;li&gt;</code>. Existe ainda a <code>&lt;dl&gt;</code> para listas de
+                definição,
+                usadas para pares de termos e descrições com <code>&lt;dt&gt;</code> e <code>&lt;dd&gt;</code>. As
+                listas são úteis para menus, passos, tópicos e muito mais.
+            </p>
+        </section>
 
-        <h2>Divisões e agrupamentos</h2>
-        <p>com a tag hr cria uma linha horizontal e br quebra a linha.</p>
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+            <img src="\img\Tabelas.png" alt="" width="400" height="300">
+            <p>As tabelas são criadas com a tag <code>&lt;table&gt;</code> e servem para exibir dados organizados em
+                linhas e colunas. Cada linha é representada por <code>&lt;tr&gt;</code>, os cabeçalhos por
+                <code>&lt;th&gt;</code>, e os dados comuns por <code>&lt;td&gt;</code>. Para uma
+                estrutura mais clara, usa-se também <code>&lt;thead&gt;</code>, <code>&lt;tbory&gt;</code> e
+                <code>&lt;tfoot&gt;</code>. A construção de tabelas é útil para exibir relatórios, comparações e
+                registros organizados visualmente.
+            </p>
+        </section>
 
-        <h2>Formulários</h2>
-        <p>Tags para capitura de dados de usuario</p>
+        <section id="divisoes">
+            <h2>Divisões e agrupamentos</h2>
+            <img src="\img\div.png" alt="" width="400" height="300">
+            <p>As tags <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> são usadas para dividir e agrupar conteúdo
+                de forma genérica. A <code>&lt;div&gt;</code> cria um bloco
+                de conteúdo, ocupando toda a largura disponível, enquanto <code>&lt;span&gt;</code> é usada para agrupar
+                elementos em linha.
+                Apesar de não terem significado semântico, essas tags são amplamente usadas para aplicar estilos,
+                estruturar
+                layouts e manipular seções com CSS e JavaScript.
+            </p>
+        </section>
 
-        <h2>Estilo e scripts</h2>
-        <p>Em construção...</p>
+        <section id="formularios">
+            <h2>Formulários</h2>
+            <img src="\img\Formularios.png" alt="" width="400" height="300">
+            <p>Formulários permitem coletar dados do usuário e enviá-los para processamento. São criados com a tag
+                <code>&lt;form&gt;</code>, e contêm
+                elementos como <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>,
+                <code>&lt;label&gt;</code> e <code>&lt;button&gt;</code>. Cada campo possui atributos específicos,
+                como type, name, placeholder, entre outros. Eles são essenciais em cadastros, pesquisas, comentários e
+                qualquer interação com o usuário.
+            </p>
+        </section>
 
-        <h2>Semânticas HTML5L</h2>
-        <p>tegas para configuras estrutura da pagina</p>
+        <section id="estilo">
+            <h2>Estilo e scripts</h2>
+            <img src="\img\CSS.png" alt="" width="400" height="300">
+            <p>O HTML permite incorporar estilos e comportamentos por meio das tags <code>&lt;stylet&gt;</code> e
+                <code>&lt;scriptt&gt;</code>.
+                A tag <code>&lt;stylet&gt;</code> é usada no <code>&lt;headt&gt;</code> para definir regras CSS que
+                controlam aparência
+                (cores, fontes, espaçamento etc.). A tag <code>&lt;script&gt;</code> é usada para incluir código
+                JavaScript, que adiciona interatividade
+                e lógica à página (eventos, animações, validações etc.). Esses elementos são fundamentais para criar
+                sites modernos e dinâmicos.
+            </p>
+        </section>
 
-        <p>Inicio</p>
-        <p></p>
+        <section id="semantica">
+            <h2>Semânticas HTML5L</h2>
+            <img src="\img\Semântica.png" alt="" width="400" height="300">
+            <p>As tags semânticas descrevem o significado do conteúdo que envolvem, facilitando a compreensão por
+                navegadores,
+                mecanismos de busca e leitores de tela. Exemplos incluem <code>&lt;header&gt;</code>,
+                <code>&lt;main&gt;</code>,
+                <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> e
+                <code>&lt;footer&gt;</code>.
+                Elas substituem o uso excessivo de <code>&lt;div&gt;</code> e ajudam a criar páginas mais acessíveis,
+                organizadas e
+                com melhor desempenho em SEO (otimização para motores de busca).
+            </p>
+        </section>
+
+        
 
     </main>
 
-    <footer>
+    <footer id="referencias">
         <h2>Referencias</h2>
-        <p></p>
-        <p>Inicio</p>
+        <p> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web Docs</a>a></p>
+        <p> <a href="#inicio">Inicio</a></p>
         <p></p>
     </footer>
 </body>
